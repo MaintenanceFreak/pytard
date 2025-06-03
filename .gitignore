@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.log
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Logs & leaderboards
+*.log
+*.out
+logs/
+leaderboard.log
+activity.log
+
+# OS/Editor metadata
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Optional: backup or test data
+*.bak
+*.tmp
+testdata/

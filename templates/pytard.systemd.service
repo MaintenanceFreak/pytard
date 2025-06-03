@@ -1,0 +1,16 @@
+[Unit]
+Description=Pytard Tarpit Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/pytard/pytard.py
+Restart=on-failure
+User=nobody
+Group=nogroup
+
+# Optional logging path override (uncomment and modify if needed)
+# ExecStart=/usr/bin/python3 /opt/pytard/pytard.py --log-path /var/log/pytard/log.log --leaderboard-path /var/log/pytard/leaderboard.log
+
+[Install]
+WantedBy=multi-user.target
