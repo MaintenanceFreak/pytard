@@ -9,15 +9,15 @@ mp.dps = 42070
 PI_DIGITS = str(mp.pi)[:42069]
 PORT = 42069
 
-LEADERBOARD = "/var/log/pytart/leaderboard.log"
-LOG_PATH = "/var/log/pytart/activity.log"
+LEADERBOARD = "/var/log/pytard/leaderboard.log"
+LOG_PATH = "/var/log/pytard/activity.log"
 
 def set_log_path(path):
     global LOG_PATH
     LOG_PATH = path
     os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
 
-def set_leaderboard_path(path="/var/log/pytart/leaderboard.log"):
+def set_leaderboard_path(path="/var/log/pytard/leaderboard.log"):
     global LEADERBOARD
     LEADERBOARD = path
     os.makedirs(os.path.dirname(LEADERBOARD), exist_ok=True)
